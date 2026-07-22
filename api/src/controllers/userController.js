@@ -5,7 +5,7 @@ import { generateAuthToken } from "../utils/tokenUtils.js";
 export async function register(req, res) {
     try {
         const userData = await createUserSchema.parseAsync(req.body);
-        
+
         const user = await userService.register(userData);
         const token = generateAuthToken(user);
 
@@ -17,4 +17,9 @@ export async function register(req, res) {
     } catch (error) {
         return res.status(400).json({ error: error.errors });
     }
+}
+
+
+export async function logout(req, res) {
+    res.json({ message: "Logout successful" });
 }
