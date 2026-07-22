@@ -20,5 +20,7 @@
  - [x] Add CORS
 
 ## Authentication and Authorization
- - [x] Create user controller
+ - [x] Create user controller with register endpoint
  - [x] Add json parser
+ - [x] Setup prisma orm database `https://www.prisma.io/docs/prisma-orm/quickstart/prisma-postgres`
+ - [x] Add user model
