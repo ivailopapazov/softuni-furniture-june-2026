@@ -39,7 +39,7 @@
  - [x] Add error util for messages
  - [x] Add Furniture model
  - [x] Add furniture service with create method
-
+ - [x] List all furnitures
 
 ## Bonus
  - [ ] Invalidate user session
