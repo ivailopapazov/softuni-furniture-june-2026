@@ -2,11 +2,12 @@ import { Router } from 'express';
 import {
     furnitureController,
     userController,
-} from './controllers/index.js';
+} from './controllers';
 
 const routes = Router();
 
 routes.get('/data/catalog', furnitureController.getAll);
+routes.post('/data/catalog', furnitureController.create);
 
 // User routes
 routes.post('/users/register', userController.register);

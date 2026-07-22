@@ -30,8 +30,15 @@
  - [x] Generate token 
  - [x] Add logout
  - [x] Add login to user controller
- - [ ] Add auth middleware
- - [ ] Add error util for messages
+ - [x] Add auth middleware
+
+## Furniture Endpoints
+ - [x] Create furniture endpoint
+ - [x] Add create furniture schema
+ - [x] Validate input
+ - [x] Add error util for messages
+ - [x] Add Furniture model
+ - [x] Add furniture service with create method
 
 
 ## Bonus
