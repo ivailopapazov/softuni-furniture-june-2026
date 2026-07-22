@@ -29,7 +29,8 @@
  - [x] Hash password with zod transform and bcrypt
  - [x] Generate token 
  - [x] Add logout
- - [ ] Add login to user controller
+ - [x] Add login to user controller
+ - [ ] Add auth middleware
  - [ ] Add error util for messages
 
 
