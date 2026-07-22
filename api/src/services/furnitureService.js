@@ -1,7 +1,8 @@
 import { prisma } from "../lib/prisma.js";
 
-export async function getAll() {
+export async function getAll(filter = {}) {
     const result = await prisma.furniture.findMany({
+        where: filter,
         select: {
             id: true,
             description: true,
@@ -30,12 +31,21 @@ export function create(furnitureData, userId) {
     });
 }
 
-
 export function remove(furnitureId, userId) {
     return prisma.furniture.delete({
         where: {
             id: furnitureId,
             userId,
         }
+    });
+}
+
+export function update(furnitureId, userId, furnitureData) {
+    return prisma.furniture.update({
+        where: {
+            id: furnitureId,
+            userId,
+        },
+        data: furnitureData
     });
 }
