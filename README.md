@@ -9,3 +9,7 @@
  - [x] Install packages `npm i`
  - [x] Install vite `npm i -D vite`
  - [x] Add dev script  
+ - [x] Add node_modules to .gitignore 
+
+## Setup REST API
+ - [ ] Initialize project
